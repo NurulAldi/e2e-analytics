@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: fact_orders
+    description: "Fakta transaksi order (grain: 1 row = 1 order detail)"
+    columns:
+      - name: order_date
+        description: "Tanggal order"
+        tests:
+          - not_null
+      - name: customer_id
+        description: "ID customer yang melakukan order"
+        tests:
+          - not_null
+      - name: sales_amount
+        description: "Nilai penjualan"
