@@ -23,3 +23,11 @@ models:
         tests:
           - not_null
           - unique
+  
+  - name: dim_product
+    description: "Dimensi produk berdasarkan kategori & nama produk"
+    columns:
+      - name: product_key
+        tests:
+        - not_null
+        - unique
