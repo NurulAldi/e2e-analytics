@@ -14,3 +14,12 @@ models:
           - not_null
       - name: sales_amount
         description: "Nilai penjualan"
+  
+  - name: dim_customer
+    description: "Dimensi customer dengan atribut demografi & perilaku login"
+    columns:
+      - name: customer_id
+        description: "Unique identifier buat customer"
+        tests:
+          - not_null
+          - unique
